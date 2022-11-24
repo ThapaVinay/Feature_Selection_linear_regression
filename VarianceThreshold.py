@@ -26,6 +26,8 @@ constant_columns = [column for column in data.columns if column not in x]
 data.drop(constant_columns, axis = 1, inplace = True)  # inplace changes the value in the original dataframe rather than returning
 print(data)
 
+
+# ADDING THE DATA TO THE EXCEL FILE
 data.to_csv("train.csv" , index = False)
 
 
